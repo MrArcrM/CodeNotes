@@ -1,38 +1,17 @@
 ## 05-Array
 
-> 如何用数组实现LRU缓存策略？
+> 如果你熟悉，回顾你理解的JVM的标记清除垃圾回收算法。
+
+我不熟悉。
+
+> 类比一维数组，写二维数组的寻址公式
 
 ```python
-
-class LRUCache:
-    def __init__(self, maxLen):
-        self.arr = [0] * maxLen
-        self.maxLen = maxLen
-        self.curSize = 0
-
-    def insert(self, val):
-        idx = self.search(val)
-        if idx > 0:
-            for i in range(p-1, -1, -1):
-                arr[i+1] = arr[i]
-            arr[0] = val
-        elif curSize < maxLen:
-            arr[curSize] = val
-            curSize += 1
-        else:
-            arr[curSize-1] = val
-
-    def  delete(self, val):
-        idx = self.search(val)
-        if idx >= 0:
-            for i in range(p+1, curSize):
-                arr[i-1] = arr[i]
-            curSize -= 1
-    
-    def search(self, val):
-        for i in range(curSize):
-            if arr[i] == val:
-                return i
-        return -1
+# 一维
+a[k]_address = base_address + k * type_size
+# 二维
+a[i][j]_address = base_address + i * type_size * cols + j * type_size
 ```
+
+
 
