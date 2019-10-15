@@ -1,8 +1,8 @@
-# LeetNotes
+# CodeNotes
 
 
 
-🎈**Notes about LeetCode**🎈
+🎈**Notes about How to Code**🎈
 
 📧 guoqu4akr@gmail.com 📧
 
