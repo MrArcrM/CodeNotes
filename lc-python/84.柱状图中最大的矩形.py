@@ -6,7 +6,7 @@
 
 # @lc code=start
 class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
+    def largestRectangleArea(self, heights: 'List[int]') -> int:
         heights.append(0)
         stack = [-1]
         max_area = 0
