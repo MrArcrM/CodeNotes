@@ -13,14 +13,12 @@ class Solution:
             while stack and n > height[stack[-1]]:
                 mid = stack.pop()
                 if stack:
-                    h = min(n, height[stack[-1]]) - height[mid]
+                    h = min(height[stack[-1]], n) - height[mid]
                     w = i - stack[-1] - 1
                     ans += h * w
-            
             stack.append(i)
         
         return ans
-
 
 # @lc code=end
 
