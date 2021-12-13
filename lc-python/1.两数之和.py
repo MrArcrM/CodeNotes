@@ -11,8 +11,7 @@ class Solution:
         for i, n in enumerate(nums):
             if n in dic.keys():
                 return [dic[n], i]
-            else:
-                dic[target - n] = i
+            dic[target - n] = i
         
         return [-1, -1]
 
